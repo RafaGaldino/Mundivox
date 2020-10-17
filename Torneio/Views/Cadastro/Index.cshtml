@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<div class="text-center"style="max-width:300px;margin:auto;margin-top:100px; ">
+    <h1 class="display-4 mb-3">Cadastro</h1>
+
+    <form asp-action="Adicionar" method="post">
+        <div class="form-group mb-4">
+            <label for="name" style="font-size:20px">Digite o nome do time: </label>
+            <input type="text" class="form-control " name="nome" id="name">
+        </div>
+        <div class="btn-group btn-block">
+            <button type="submit" class="btn btn-lg btn-outline-success">Cadastrar</button>
+            <a href="./" class="btn btn-lg btn-outline-primary">Voltar</a>
+        </div>
+    </form>
+
+</div>
